@@ -17,7 +17,7 @@ public class CorsConfig implements WebMvcConfigurer {
                 .maxAge(3600); // Cache preflight request for 1 hour
 
         registry.addMapping("/api/uploads/**") // Configure CORS for the file-serving path
-                .allowedOrigins("http://localhost:3000") // Allow requests from this origin
+                .allowedOrigins("https://master--subtle-cendol-d121d5.netlify.app") // Allow requests from this origin
                 .allowedMethods("GET") // Only allow GET requests for serving files
                 .allowCredentials(true) // Allow cookies and credentials
                 .maxAge(3600); // Cache preflight request for 1 hour

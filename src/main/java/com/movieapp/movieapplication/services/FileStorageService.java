@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 @Service
 public class FileStorageService {
-    private String uploadDir = "C:\\Users\\conor\\Desktop\\movies\\movie-application\\uploads"; // Update this to your desired directory
+    private String uploadDir = "C:\\Users\\conor\\Desktop\\movie-application\\uploads"; // Update this to your desired directory
 
     public String storeFile(MultipartFile file) {
         // Normalize file name

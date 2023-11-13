@@ -23,7 +23,7 @@ public class UserController {
 
     private final JwtService jwtService;
     private final FileStorageService fileStorageService; // Service for storing files
-    private final String uploadDir = "C:\\Users\\conor\\Desktop\\movies\\movie-application\\uploads";
+
 
     @Autowired
     public UserController(UserRepository userService, FileStorageService fileStorageService, JwtService jwtService) {
@@ -60,6 +60,7 @@ public class UserController {
             @PathVariable Long userId,
             @PathVariable String fileName) throws IOException {
         try {
+            String uploadDir = "C:\\Users\\conor\\Desktop\\movie-application\\uploads";
             Path filePath = Paths.get(uploadDir).resolve(fileName);
             Resource resource = new UrlResource(filePath.toUri());
 

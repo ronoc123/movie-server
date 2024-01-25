@@ -72,5 +72,6 @@ public class UserController {
         } catch (MalformedURLException e) {
             return ResponseEntity.notFound().build();
         }
+
     }
 }

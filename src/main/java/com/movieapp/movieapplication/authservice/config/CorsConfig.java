@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Configure which paths need CORS support
-                .allowedOrigins("https://subtle-cendol-d121d5.netlify.app", "http://localhost:3000") // Allow requests from this origin
+                .allowedOrigins("https://subtle-cendol-d121d5.netlify.app", "http://localhost:3000", "https://movie-hub-2.netlify.app") // Allow requests from this origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Allowed HTTP methods
                 .allowedHeaders("Authorization", "Content-Type") // Allowed request headers
                 .exposedHeaders("Authorization") // Headers exposed to the client
